@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hulunbuir: The Hometown of Wind</title>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #72A98F, #3D5A80, #72A98F, #E07A5F);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid #3D5A80; 
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 50, 65, 0.7);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    z-index: -1;
+}
+
+.welcome-title {
+    color: #F9F9F6;
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.welcome-subtitle {
+    color: #72A98F;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.enter-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #E07A5F;
+    color: #F9F9F6;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(224, 122, 95, 0.4);
+}
+
+.enter-btn:hover {
+    background-color: #F9F9F6;
+    color: #E07A5F;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(224, 122, 95, 0.6);
+}
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="welcome-title">Hulunbeier</div>
+        <div class="welcome-subtitle">The Hometown of Wind, A Boundless Dream</div>
+        <a href="main.html" class="enter-btn">Begin Your Adventure</a>
+    </div>
+</body>
+</html>
